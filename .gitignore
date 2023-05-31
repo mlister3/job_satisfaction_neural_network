@@ -159,6 +159,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-metal-smithy-387702-4be2e90f2441.json
-client_secret_427587412711-gf7tam713mg1deejjl4mr111u1vphsem.apps.googleusercontent.com.json
-/resources
+*.csv
