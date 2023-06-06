@@ -1,0 +1,1101 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='pplease_new_top_86' inline='true' name='federated.00kmynx0fn4hb91d3tsz60f9bd9o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pplease_new_top_86' name='textscan.09ypyst0qm2h3t11ffbvp0xikv8c'>
+            <connection class='textscan' directory='/Users/lynn/Desktop/job_satisfaction_neural_network' filename='pplease_new_top_86.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='pplease_new_top_86 (2)' name='textscan.1dfyjo31a5ufd515jy7br0emkrsv'>
+            <connection class='textscan' directory='/Users/lynn/Desktop/job_satisfaction_neural_network' filename='pplease_new_top_86.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='cleaned' name='textscan.0mqte0o16djzlq155veuk0hn7u6p'>
+            <connection class='textscan' directory='/Users/lynn/Desktop/job_satisfaction_neural_network' filename='cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.09ypyst0qm2h3t11ffbvp0xikv8c' name='pplease_new_top_86.csv' table='[pplease_new_top_86#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='review_index' ordinal='0' />
+            <column datatype='string' name='firm' ordinal='1' />
+            <column datatype='date' name='date_review' ordinal='2' />
+            <column datatype='string' name='job_title' ordinal='3' />
+            <column datatype='string' name='current' ordinal='4' />
+            <column datatype='string' name='Time With Company' ordinal='5' />
+            <column datatype='string' name='City' ordinal='6' />
+            <column datatype='string' name='State' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='integer' name='overall_rating' ordinal='9' />
+            <column datatype='integer' name='work_life_balance' ordinal='10' />
+            <column datatype='integer' name='culture_values' ordinal='11' />
+            <column datatype='integer' name='diversity_inclusion' ordinal='12' />
+            <column datatype='integer' name='career_opp' ordinal='13' />
+            <column datatype='integer' name='comp_benefits' ordinal='14' />
+            <column datatype='integer' name='senior_mgmt' ordinal='15' />
+            <column datatype='string' name='recommend' ordinal='16' />
+            <column datatype='string' name='ceo_approv' ordinal='17' />
+            <column datatype='string' name='outlook' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.09ypyst0qm2h3t11ffbvp0xikv8c' name='pplease_new_top_86.csv' table='[pplease_new_top_86#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='review_index' ordinal='0' />
+            <column datatype='string' name='firm' ordinal='1' />
+            <column datatype='date' name='date_review' ordinal='2' />
+            <column datatype='string' name='job_title' ordinal='3' />
+            <column datatype='string' name='current' ordinal='4' />
+            <column datatype='string' name='Time With Company' ordinal='5' />
+            <column datatype='string' name='City' ordinal='6' />
+            <column datatype='string' name='State' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='integer' name='overall_rating' ordinal='9' />
+            <column datatype='integer' name='work_life_balance' ordinal='10' />
+            <column datatype='integer' name='culture_values' ordinal='11' />
+            <column datatype='integer' name='diversity_inclusion' ordinal='12' />
+            <column datatype='integer' name='career_opp' ordinal='13' />
+            <column datatype='integer' name='comp_benefits' ordinal='14' />
+            <column datatype='integer' name='senior_mgmt' ordinal='15' />
+            <column datatype='string' name='recommend' ordinal='16' />
+            <column datatype='string' name='ceo_approv' ordinal='17' />
+            <column datatype='string' name='outlook' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_index]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>review_index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[firm]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>firm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_review]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>date_review</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_title]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>job_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[current]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>current</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time With Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time With Company]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>Time With Company</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[overall_rating]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>overall_rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_life_balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_life_balance]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>work_life_balance</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>culture_values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[culture_values]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>culture_values</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diversity_inclusion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[diversity_inclusion]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>diversity_inclusion</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>career_opp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[career_opp]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>career_opp</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comp_benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comp_benefits]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>comp_benefits</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>senior_mgmt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[senior_mgmt]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>senior_mgmt</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommend</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recommend]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>recommend</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceo_approv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ceo_approv]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>ceo_approv</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outlook</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outlook]</local-name>
+            <parent-name>[pplease_new_top_86.csv]</parent-name>
+            <remote-alias>outlook</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;√éle-de-France&quot;' value='&quot;France&quot;' />
+          <semantic-value key='&quot;Abra&quot;' value='&quot;Philippines&quot;' />
+          <semantic-value key='&quot;Aichi&quot;' value='&quot;Japan&quot;' />
+          <semantic-value key='&quot;AL&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Antioquia&quot;' value='&quot;Colombia&quot;' />
+          <semantic-value key='&quot;Aquitaine&quot;' value='&quot;France&quot;' />
+          <semantic-value key='&quot;Argovia&quot;' value='&quot;Switzerland&quot;' />
+          <semantic-value key='&quot;Baden-W√ºrttemberg&quot;' value='&quot;Germany&quot;' />
+          <semantic-value key='&quot;Baden-Wurttemberg&quot;' value='&quot;Germany&quot;' />
+          <semantic-value key='&quot;Bahia&quot;' value='&quot;Brazil&quot;' />
+          <semantic-value key='&quot;Baja California&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Balochistan&quot;' value='&quot;Pakistan&quot;' />
+          <semantic-value key='&quot;Bavaria&quot;' value='&quot;Germany&quot;' />
+          <semantic-value key='&quot;Beijing&quot;' value='&quot;China&quot;' />
+          <semantic-value key='&quot;Bihar&quot;' value='&quot;India&quot;' />
+          <semantic-value key='&quot;Bistrita-Nasaud&quot;' value='&quot;Romania&quot;' />
+          <semantic-value key='&quot;Bogota&quot;' value='&quot;Colombia&quot;' />
+          <semantic-value key='&quot;Budapest&quot;' value='&quot;Hungary&quot;' />
+          <semantic-value key='&quot;Carabobo&quot;' value='&quot;Venezuela&quot;' />
+          <semantic-value key='&quot;Central Java&quot;' value='&quot;Indonesia&quot;' />
+          <semantic-value key='&quot;CO&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Dublin&quot;' value='&quot;Ireland&quot;' />
+          <semantic-value key='&quot;East Midlands&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;East of England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;FL&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;GA&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Gauteng&quot;' value='&quot;South Africa&quot;' />
+          <semantic-value key='&quot;Greater Poland&quot;' value='&quot;Poland&quot;' />
+          <semantic-value key='&quot;Guangdong&quot;' value='&quot;China&quot;' />
+          <semantic-value key='&quot;Gujarat&quot;' value='&quot;India&quot;' />
+          <semantic-value key='&quot;Haryana&quot;' value='&quot;India&quot;' />
+          <semantic-value key='&quot;Heredia&quot;' value='&quot;Costa Rica&quot;' />
+          <semantic-value key='&quot;Islamabad&quot;' value='&quot;Pakistan&quot;' />
+          <semantic-value key='&quot;Istanbul&quot;' value='&quot;Turkey&quot;' />
+          <semantic-value key='&quot;Jalisco&quot;' value='&quot;Mexico&quot;' />
+          <semantic-value key='&quot;Jammu and Kashmir&quot;' value='&quot;India&quot;' />
+          <semantic-value key='&quot;Lagos&quot;' value='&quot;Portugal&quot;' />
+          <semantic-value key='&quot;Lima Region&quot;' value='&quot;Peru&quot;' />
+          <semantic-value key='&quot;M√©xico&quot;' value='&quot;Mexico&quot;' />
+          <semantic-value key='&quot;MN&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;MO&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;NC&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;NJ&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;NY&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;S√£o Paulo&quot;' value='&quot;Brazil&quot;' />
+          <semantic-value key='&quot;San Jose&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Scotland&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;South East England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;South West England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Southern Finland&quot;' value='&quot;Finland&quot;' />
+          <semantic-value key='&quot;Stockholm&quot;' value='&quot;Sweden&quot;' />
+          <semantic-value key='&quot;TN&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;TX&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;WA&quot;' value='&quot;United States&quot;' />
+          <semantic-value key='&quot;Wales&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;West Java&quot;' value='&quot;Indonesia&quot;' />
+          <semantic-value key='&quot;West Midlands&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Western Australia&quot;' value='&quot;Australia&quot;' />
+          <semantic-value key='&quot;Wexford&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Yobe&quot;' value='&quot;Nigeria&quot;' />
+          <semantic-value key='&quot;Z√ºrich&quot;' value='&quot;Germany&quot;' />
+          <semantic-value key='&quot;Zhejiang&quot;' value='&quot;China&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='pplease_new_top_86.csv' datatype='table' name='[__tableau_internal_object_id__].[pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247]' role='measure' type='quantitative' />
+      <column caption='Career Opp' datatype='integer' name='[career_opp]' role='measure' type='quantitative' />
+      <column caption='Ceo Approv' datatype='string' name='[ceo_approv]' role='dimension' type='nominal' />
+      <column caption='Comp Benefits' datatype='integer' name='[comp_benefits]' role='measure' type='quantitative' />
+      <column caption='Culture Values' datatype='integer' name='[culture_values]' role='measure' type='quantitative' />
+      <column caption='Current' datatype='string' name='[current]' role='dimension' type='nominal' />
+      <column caption='Date Review' datatype='date' name='[date_review]' role='dimension' type='ordinal' />
+      <column caption='Diversity Inclusion' datatype='integer' name='[diversity_inclusion]' role='measure' type='quantitative' />
+      <column caption='Firm' datatype='string' name='[firm]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+      <column caption='Outlook' datatype='string' name='[outlook]' role='dimension' type='nominal' />
+      <column caption='Overall Rating' datatype='integer' name='[overall_rating]' role='measure' type='quantitative' />
+      <column caption='Recommend' datatype='string' name='[recommend]' role='dimension' type='nominal' />
+      <column caption='Review Index' datatype='integer' name='[review_index]' role='measure' type='quantitative' />
+      <column caption='Senior Mgmt' datatype='integer' name='[senior_mgmt]' role='measure' type='quantitative' />
+      <column caption='Work Life Balance' datatype='integer' name='[work_life_balance]' role='measure' type='quantitative' />
+      <column-instance column='[firm]' derivation='None' name='[none:firm:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Country, State, City'>
+          <field>[Country]</field>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:firm:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Barnett-Waddingham&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;LinkedIn&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SAP&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;University-of-Glasgow&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abcam&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gateley&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Oxford-University&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Unity-Technologies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;University-of-Warwick&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Anglian-Water&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kingsley-Healthcare&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rentokil-Initial&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;University-of-Bristol&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wise&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Citizens-Advice&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;McKinsey-and-Company&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sytner&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;University-of-Manchester&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Boston-Consulting-Group&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;London-Underground&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Somerset-Partnership-NHS-Foundation-Trust&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;University-of-Huddersfield&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Apple&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lancaster-University&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Robert-Walters&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;University-of-Cambridge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;XPO-Logistics&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Facebook&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Oliver-Wyman&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;UHMBT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;University-of-Strathclyde&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Achieving-for-Children&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Google&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Randstad&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University-College-London&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;University-of-York&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dynatrace&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Northern-Gas-and-Power&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The-Survey-Association&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;University-of-Sheffield&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AXA-UK&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Leaders-Romans-Group&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ryan-LLC&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;University-of-Durham&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CityFibre&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Michelmores&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Taylor-Wimpey&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;University-of-Michigan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Companies-House&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nando-s-UK-and-IRE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tengizchevroil&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University-of-Newcastle-UK&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Engineering-and-Physical-Sciences-Research-Council&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Office-for-National-Statistics&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Time-Etc&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;University-of-Southampton&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FirstPort&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Orbit-Group&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;United-Utilities&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;University-of-the-West-of-England&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bullhorn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Loughborough-University&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Southern-Health-and-Social-Care-Trust&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;University-of-Leeds&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bain-and-Company&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LGT-Group&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Salesforce&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;University-of-Edinburgh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ActionCOACH&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Immediate-Media-Company&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rathbone-Brothers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;University-of-Bath&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Vets-Now&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Covea-Insurance&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;National-Star&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The-Church-of-Jesus-Christ-of-Latter-day-Saints&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;University-of-Nottingham&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CarShop-UK&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LSE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sport-England&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;University-of-Liverpool&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AlixPartners&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Imperial-College-London&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Reassured&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;University-of-Birmingham&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Western-Health-and-Social-Care-Trust&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='pplease_new_top_86.csv' id='pplease_new_top_86.csv_F48F8348E2604FF29C9F9A0341EFF247'>
+            <properties context=''>
+              <relation connection='textscan.09ypyst0qm2h3t11ffbvp0xikv8c' name='pplease_new_top_86.csv' table='[pplease_new_top_86#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='review_index' ordinal='0' />
+                  <column datatype='string' name='firm' ordinal='1' />
+                  <column datatype='date' name='date_review' ordinal='2' />
+                  <column datatype='string' name='job_title' ordinal='3' />
+                  <column datatype='string' name='current' ordinal='4' />
+                  <column datatype='string' name='Time With Company' ordinal='5' />
+                  <column datatype='string' name='City' ordinal='6' />
+                  <column datatype='string' name='State' ordinal='7' />
+                  <column datatype='string' name='Country' ordinal='8' />
+                  <column datatype='integer' name='overall_rating' ordinal='9' />
+                  <column datatype='integer' name='work_life_balance' ordinal='10' />
+                  <column datatype='integer' name='culture_values' ordinal='11' />
+                  <column datatype='integer' name='diversity_inclusion' ordinal='12' />
+                  <column datatype='integer' name='career_opp' ordinal='13' />
+                  <column datatype='integer' name='comp_benefits' ordinal='14' />
+                  <column datatype='integer' name='senior_mgmt' ordinal='15' />
+                  <column datatype='string' name='recommend' ordinal='16' />
+                  <column datatype='string' name='ceo_approv' ordinal='17' />
+                  <column datatype='string' name='outlook' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_D32C801E5695471286C6CA351923D743]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Map Europe' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='City' />
+        <param name='target' value='Map Europe' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Map Europe'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pplease_new_top_86' name='federated.00kmynx0fn4hb91d3tsz60f9bd9o' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00kmynx0fn4hb91d3tsz60f9bd9o'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;√éle-de-France&quot;' value='&quot;France&quot;' />
+                <semantic-value key='&quot;Abra&quot;' value='&quot;Philippines&quot;' />
+                <semantic-value key='&quot;Aichi&quot;' value='&quot;Japan&quot;' />
+                <semantic-value key='&quot;AL&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Antioquia&quot;' value='&quot;Colombia&quot;' />
+                <semantic-value key='&quot;Aquitaine&quot;' value='&quot;France&quot;' />
+                <semantic-value key='&quot;Argovia&quot;' value='&quot;Switzerland&quot;' />
+                <semantic-value key='&quot;Baden-W√ºrttemberg&quot;' value='&quot;Germany&quot;' />
+                <semantic-value key='&quot;Baden-Wurttemberg&quot;' value='&quot;Germany&quot;' />
+                <semantic-value key='&quot;Bahia&quot;' value='&quot;Brazil&quot;' />
+                <semantic-value key='&quot;Baja California&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Balochistan&quot;' value='&quot;Pakistan&quot;' />
+                <semantic-value key='&quot;Bavaria&quot;' value='&quot;Germany&quot;' />
+                <semantic-value key='&quot;Beijing&quot;' value='&quot;China&quot;' />
+                <semantic-value key='&quot;Bihar&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Bistrita-Nasaud&quot;' value='&quot;Romania&quot;' />
+                <semantic-value key='&quot;Bogota&quot;' value='&quot;Colombia&quot;' />
+                <semantic-value key='&quot;Budapest&quot;' value='&quot;Hungary&quot;' />
+                <semantic-value key='&quot;Carabobo&quot;' value='&quot;Venezuela&quot;' />
+                <semantic-value key='&quot;Central Java&quot;' value='&quot;Indonesia&quot;' />
+                <semantic-value key='&quot;CO&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Dublin&quot;' value='&quot;Ireland&quot;' />
+                <semantic-value key='&quot;East Midlands&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;East of England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;FL&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;GA&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Gauteng&quot;' value='&quot;South Africa&quot;' />
+                <semantic-value key='&quot;Greater Poland&quot;' value='&quot;Poland&quot;' />
+                <semantic-value key='&quot;Guangdong&quot;' value='&quot;China&quot;' />
+                <semantic-value key='&quot;Gujarat&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Haryana&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Heredia&quot;' value='&quot;Costa Rica&quot;' />
+                <semantic-value key='&quot;Islamabad&quot;' value='&quot;Pakistan&quot;' />
+                <semantic-value key='&quot;Istanbul&quot;' value='&quot;Turkey&quot;' />
+                <semantic-value key='&quot;Jalisco&quot;' value='&quot;Mexico&quot;' />
+                <semantic-value key='&quot;Jammu and Kashmir&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Lagos&quot;' value='&quot;Portugal&quot;' />
+                <semantic-value key='&quot;Lima Region&quot;' value='&quot;Peru&quot;' />
+                <semantic-value key='&quot;M√©xico&quot;' value='&quot;Mexico&quot;' />
+                <semantic-value key='&quot;MN&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;MO&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;NC&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;NJ&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;NY&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;S√£o Paulo&quot;' value='&quot;Brazil&quot;' />
+                <semantic-value key='&quot;San Jose&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Scotland&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;South East England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;South West England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Southern Finland&quot;' value='&quot;Finland&quot;' />
+                <semantic-value key='&quot;Stockholm&quot;' value='&quot;Sweden&quot;' />
+                <semantic-value key='&quot;TN&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;TX&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;WA&quot;' value='&quot;United States&quot;' />
+                <semantic-value key='&quot;Wales&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;West Java&quot;' value='&quot;Indonesia&quot;' />
+                <semantic-value key='&quot;West Midlands&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Western Australia&quot;' value='&quot;Australia&quot;' />
+                <semantic-value key='&quot;Wexford&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Yobe&quot;' value='&quot;Nigeria&quot;' />
+                <semantic-value key='&quot;Z√ºrich&quot;' value='&quot;Germany&quot;' />
+                <semantic-value key='&quot;Zhejiang&quot;' value='&quot;China&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:City:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:City:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;·∏®awallƒ´&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;·∏®awwƒÅrah&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;&apos;s-Hertogenbosch&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;√âlancourt&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;√êa NƒÉng&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;√úsk√ºdar&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;≈¢an≈£ƒÅ&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;≈åsaka&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]</column>
+            <column>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Latitude (generated)]</column>
+            <column>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:Country:nk]' />
+              <lod column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:State:nk]' />
+              <lod column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Latitude (generated)]</rows>
+        <cols>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F1501534-4450-4BDF-8C58-11B12D53C5A6}' />
+    </worksheet>
+    <worksheet name='Map US'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pplease_new_top_86' name='federated.00kmynx0fn4hb91d3tsz60f9bd9o' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00kmynx0fn4hb91d3tsz60f9bd9o'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Firm' datatype='string' name='[firm]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[firm]' derivation='None' name='[none:firm:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:firm:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:firm:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;AXA-UK&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;CarShop-UK&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Imperial-College-London&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Kingsley-Healthcare&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Lancaster-University&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;London-Underground&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Loughborough-University&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Nando-s-UK-and-IRE&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;Oxford-University&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-College-London&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Bath&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Birmingham&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Bristol&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Cambridge&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Durham&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Edinburgh&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Glasgow&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Huddersfield&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Leeds&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Liverpool&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Manchester&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Newcastle-UK&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Nottingham&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Sheffield&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Southampton&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Strathclyde&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-the-West-of-England&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Warwick&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-York&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:firm:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:firm:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Southampton&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Strathclyde&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-the-West-of-England&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-Warwick&quot;' />
+                <groupfilter function='member' level='[none:firm:nk]' member='&quot;University-of-York&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:firm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Longitude (generated)]' field-type='quantitative' max='-2432848.8142336868' min='-18051944.312941056' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Latitude (generated)]' field-type='quantitative' max='10683580.647120556' min='1188582.2407534379' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:firm:nk]' />
+              <lod column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:State:nk]' />
+              <lod column='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.33983424305915833' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Latitude (generated)]</rows>
+        <cols>[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B4ADC42D-2B63-4213-A2E1-DA968001859F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Map US'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00kmynx0fn4hb91d3tsz60f9bd9o].[none:firm:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{061D9321-2D4F-476A-B3D3-DD8790A0E1E2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Map Europe'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='8' />
+      </viewpoint>
+      <simple-id uuid='{C47FDE56-3AE5-46A8-B0BD-85FE5999631C}' />
+    </window>
+  </windows>
+</workbook>
