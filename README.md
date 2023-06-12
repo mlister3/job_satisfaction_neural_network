@@ -47,7 +47,9 @@
 
 ## Summary
 
+The exact parameters for the neural network were chosen because the neuron count must encompass the features width of the dataset. More layers increased the accuracy of the model over less epochs. More epochs past 20 may have shown greater accuracy in training (>80% at 100 epochs), but it showed less accuracy in testing: a result of overfitting.
 
+Running the neural network without the processed word data from `headline`, `pros`, and `cons` resulted in a repeatable worsening of the accuracy in training and testing. This shows that subjective data has value in predicting mood objectively and weights for the `value_counts()` of the words in the text data may assist in mitigating individual bias in predictions.
 
 - - -
 
@@ -55,7 +57,7 @@
 
 Glassdoor takes in reviews from current and former employees on the organization that they work or worked for. Items like salary, approval of the CEO, and overall rating are only some of the items of information that Glassdoor requests to collect. "The World Happiness Report is a publication of the Sustainable Development Solutions Network, powered by the Gallup World Poll data. The World Happiness Report reflects a worldwide demand for more attention to happiness and well-being as criteria for government policy. It reviews the state of happiness in the world today and shows how the science of happiness explains personal and national variations in happiness."
 
-One of the objectives of this research project is to include happiness based off location from the World Happiness Report (WHR) in conjuction with user reviews of how satisfied they are working for or having worked for organizations that operate in the country they reside. This will allow intangibles from the WHR to be used when answering the question: "What really makes employees happy?"
+One of the objectives of this research project is to include happiness based off location from the World Happiness Report (WHR) in conjunction with user reviews of how satisfied they are working for or having worked for organizations that operate in the country they reside. This will allow intangibles from the WHR to be used when answering the question: "What really makes employees happy?"
 
 Data points from the Glassdoor Reviews CSV are as follows:
 
