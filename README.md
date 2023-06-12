@@ -31,7 +31,7 @@
     - All columns corresponding to the dropped NaN values from the previous DataFrame are dropped.
     - For each possible rating and each attribute for each rating, a collection of tokenized words are collected as will as their counts in a new DataFrame. This shows the top 500 words for each attribute rating combination.
 
-    [!image1](/pictures/Screenshot%202023-06-12%20155707.png)
+    ![image1](/pictures/Screenshot%202023-06-12%20155707.png)
 
     - Included in the data processing but not used for this update of the report is a droppinf of all duplicate words from this large dataset showing only unique values. In the next update, this will be removed in favor of using the count of values as a weight for the neural network.
 
