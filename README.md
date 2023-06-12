@@ -37,6 +37,14 @@
 
 6. The actual dataset with user input string values is put through a function that tokenizes the text and records matches with the columns of popular words in each attribute and rating. This count is appended to a DataFrame that will be merged with the actual dataset. The purpose of this is to objectify subjective writing to improve the neural network's performance from using the Natural Language Toolkit.
 
+7. The working DataFrame is put through a hot-ended processor for remaining non-float/non-integer values to be turned into data that can be used in the neural network.
+
+8. Data is split X (attributes) and y (target column / overall_rating) using `StandardScaler` and then into training and testing datasets using `TrainTestSplit`.
+
+9. A TensorFlow sequential neural network model is created with the following parameters and trained with the data.
+
+    ![image2](/pictures/Screenshot%202023-06-12%20160440.png)
+
 ## Summary
 
 
