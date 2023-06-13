@@ -6,6 +6,8 @@ The data collected lists of the best office places based on the reviews ends up 
 The factors that I focused on showed the effects of happiness when comparing the company benefits, career opportunities, and senior management ratings. From the dataset the average ratings in these 3 categories were between 3 and 4. 
 
 Job satisfaction impacts employees overall as well as diversity, work culture, and success. Majority of of the data coincide with how they effect each other, the difference in lack of satisfaction, which apparent how they were rated.
+
+https://github.com/mlister3/job_satisfaction_neural_network.git
 - - -
 
 ## Overview of the Analysis and Neural Network
