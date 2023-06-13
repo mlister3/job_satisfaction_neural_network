@@ -7,7 +7,7 @@ The factors that I focused on showed the effects of happiness when comparing the
 
 Job satisfaction impacts employees overall as well as diversity, work culture, and success. Majority of of the data coincide with how they effect each other, the difference in lack of satisfaction, which apparent how they were rated.
 
-https://github.com/mlister3/job_satisfaction_neural_network.git
+https://public.tableau.com/app/profile/ruthlene.jeannelas/viz/EffectsofJobHappiness/TopFirms
 - - -
 
 ## Overview of the Analysis and Neural Network
